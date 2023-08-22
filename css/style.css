@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.headnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    color: #fbfbfb;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo a {
+    display: flex;
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+.logosuv {
+    vertical-align: revert;
+    margin: auto;
+    margin-left: 15px;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.navcon {
+    position: relative;
+    padding: 0 50px;
+    border-left: 1px solid;
+}
+
+.navcon::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://placehold.jp/150x150.png);
+}
+
+.fstview {
+    width: calc(100vw - (100vw - 100%));
+    position: relative;
+}
+
+.fstimg {
+    width: 100%;
+}
+
+.title_box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.title {
+    position: absolute;
+    /* top: 0; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.fs_left_wrap {
+    display: flex;
+
+}
+
+.p_left {
+
+}
+
+.p_left p {
+    /* text-orientation: upright;
+    writing-mode: vertical-rl; */
+    transform: rotate(90deg) translateX(50%);
+    font-size: 10px;
+}
+
+.main_title {
+    /* width: 70%; */
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 4em;
+    /* position: relative; */
+}
+
+h2 span {
+    border-bottom: 5px solid;
+}
+/* h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 10px;
+} */
+
+h3 {
+    font-size: 27px;
+}
+
+h4 {
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.scroll_right {
+    /* text-orientation: upright; */
+    display: flex;
+    align-items: center;
+    width: 20%;
+    transform: rotate(90deg);
+}
+
+.scroll_right p {
+    /* position: relative;
+    text-orientation: upright;
+    writing-mode: vertical-rl; */
+    font-size: 10px;
+}
+
+.scroll_right .arow {
+    width: 100%;
+    height: 10px;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.arow_line {
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: scroll 1.5s infinite;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes scroll {
+    0%{
+        transform: rotateY(-100%);
+    }
+    100%{
+        transform: rotateY(0%);
+    }
+}
+/* .p_right p::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid;
+    top: 70px;
+    left: 7px;
+    right: 0;
+    height: 100px;
+    animation: arrow 2.5s ease 0s infinite normal;
+} */
