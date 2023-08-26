@@ -148,54 +148,31 @@ h4 {
 
 .scroll_right .arow {
     width: 100%;
-    height: 10px;
-    background: black;
+    height: 4px;
+    background-color: rgba(17, 22, 71, 0.2);
     position: relative;
     overflow: hidden;
+    border-radius: 10%;
 }
 
 .arow_line {
     background: white;
     width: 100%;
     height: 100%;
-    animation: 1.5s infinite scroll;
+    animation: 1.5s infinite scroll ease-in-out;
     position: absolute;
     top: 0;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
 }
 
-/*テスト*/
-/* .arow_line {
-    background: white;
-    width: 100%;
-    height: 100%;
-    animation: 1.5s infinite scroll;
-    position: absolute;
-    top: 0;
-    transform: translateY(-100%);
-} */
-
-
-/* @keyframes scroll {
-    0%{
-        background-color: white;
-        transform: translateY(-100%);
-    }
-    100%{
-        background-color: black;
-        transform: translateY(0%);
-    }
-} */
-
-/*テスト終わり*/
 @keyframes scroll {
     0%{
-        background-color: white;
-        transform: translateY(-100%);
+        /* background-color: white; */
+        transform: translateX(-100%);
     }
     100%{
-        background-color: black;
-        transform: translateY(0%);
+        /* background-color: black; */
+        transform: translateX(0%);
     }
 }
 /* .p_right p::after {
