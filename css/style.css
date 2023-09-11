@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
 img {
     width: 100%;
     vertical-align: bottom;
@@ -19,6 +22,10 @@ img {
     width: 100%;
     position: fixed;
     z-index: 1;
+}
+
+h1 {
+    font-size: 32px;
 }
 
 .logo a {
@@ -39,6 +46,7 @@ img {
     list-style: none;
     gap: 30px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .navcon {
@@ -63,10 +71,13 @@ img {
 .fstview {
     width: calc(100vw - (100vw - 100%));
     position: relative;
+    
 }
 
 .fstimg {
-    width: 100%;
+    background-image: url(../img/yama.jpg);
+    height: 100vh;
+    background-size: cover;
 }
 
 .title_box {
@@ -77,15 +88,18 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100vh;
 }
 
 .title {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     /* top: 0; */
     width: 96%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     color: #fbfbfb;
+    height: 85vh;
 }
 
 .fs_left_wrap {
@@ -94,7 +108,7 @@ img {
 }
 
 .p_left {
-
+    
 }
 
 .p_left p {
@@ -111,20 +125,22 @@ img {
 
 .main_title {
     /* width: 70%; */
-    margin-left: 10em;
+    margin-left: 12em;
+    font-size: 1vw;
 }
 
 h2 {
-    font-size: 4.6em;
-    line-height: 100px;
+    font-size: 6.5em;
+    line-height: 1.2;
     margin-bottom: .5em;
     /* position: relative; */
+    /* height: 100vh; */
 }
 
 h2 span {
     /* border-bottom: 10px solid; */
     text-decoration: underline;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     color: #fbfbfb;
 }
 
@@ -138,7 +154,7 @@ h3 {
 
 h4 {
     line-height: 2em;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     font-size: 15px;
 }
 .scroll_right {
@@ -161,7 +177,7 @@ h4 {
 }
 
 .scroll_right .arow {
-    width: 55%;
+    width: 40%;
     height: 4px;
     background-color: rgba(17, 22, 71, 0.5);
     position: relative;
