@@ -74,8 +74,31 @@ h1 {
     
 }
 
-.fstimg {
+.slider div {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+.slider {
+
+}
+
+.fstimg1 {
     background-image: url(../img/yama.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.fstimg2 {
+    background-image: url(../img/hyouzan.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.fstimg3 {
+    background-image: url(../img/ine.jpg);
     height: 100vh;
     background-size: cover;
 }
