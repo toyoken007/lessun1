@@ -8,6 +8,7 @@
 html {
     font-size: 10px;
 }
+
 img {
     width: 100%;
     vertical-align: bottom;
@@ -41,6 +42,7 @@ h1 {
     letter-spacing: 1.5px;
     font-size: 12px;
 }
+
 .nav ul {
     display: flex;
     list-style: none;
@@ -71,7 +73,7 @@ h1 {
 .fstview {
     width: calc(100vw - (100vw - 100%));
     position: relative;
-    
+
 }
 
 .slider div {
@@ -79,9 +81,6 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  
-  }
-.slider {
 
 }
 
@@ -130,9 +129,7 @@ h1 {
 
 }
 
-.p_left {
-    
-}
+.p_left {}
 
 .p_left p {
     /* text-orientation: upright;
@@ -180,6 +177,7 @@ h4 {
     /* margin-top: 30px; */
     font-size: 15px;
 }
+
 .scroll_right {
     /* text-orientation: upright; */
     display: flex;
@@ -219,15 +217,17 @@ h4 {
 }
 
 @keyframes scroll {
-    0%{
+    0% {
         /* background-color: white; */
         transform: translateX(-100%);
     }
-    100%{
+
+    100% {
         /* background-color: black; */
         transform: translateX(0%);
     }
 }
+
 /* .p_right p::after {
     content: "";
     position: absolute;
