@@ -241,3 +241,9 @@ h4 {
     height: 100px;
     animation: arrow 2.5s ease 0s infinite normal;
 } */
+
+.back_img {
+    background-image: url(../img/wave.jpg);
+    width: 100vw;
+    height: 100vh;
+}
