@@ -242,8 +242,140 @@ h4 {
     animation: arrow 2.5s ease 0s infinite normal;
 } */
 
-.back_img {
-    background-image: url(../img/wave.jpg);
-    width: 100vw;
-    height: 100vh;
+.rinen_back_img {
+    background: url(../img/wave.jpg);
+    width: 100%;
+    /* padding-top: 100px; */
+    height: 560px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rinen_wrap {
+    width: 83%;
+    margin: 0 auto;
+    padding: 180px 0 70px;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.rinen_h2>p {
+    font-size: 5.5em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.rinen_h3>p {
+    font-size: 2em;
+}
+
+.rinen_h4>p {
+    font-size: 1.2em;
+}
+
+/*business_box*/
+
+.business_box {
+    margin-top: 100px;
+    font-size: 10px;
+}
+
+.business_box h3 {
+    font-weight: normal;
+    font-size: 9em;
+    line-height: 0.9;
+    text-align: right;
+}
+
+.business_box .busi {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.left_box {
+    width: 50%;
+    padding: 12vh 0 10vh 20vh;
+}
+
+.border {
+    border: 5px solid black;
+    padding: 70px;
+    position: relative;
+}
+
+.border::before {
+    content: "";
+    background-image: url(../img/hikki.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    top: -20px;
+    left: -40px;
+    display: block;
+    transform: rotate(-45deg);
+}
+
+.border>h4 {
+    font-size: 4rem;
+    position: relative;
+    line-height: 1.2;
+}
+
+.border>h4::before {
+    content: "";
+    background-image: url(https://placehold.jp/150x150.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    display: block;
+}
+
+.border>p {
+    font-size: 1.5em;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+
+.right_img {
+    width: 60%;
+    margin-left: -90px;
+    height: 95vh;
+    position: relative;
+}
+
+.right_img::after {
+    content: "";
+    position: absolute;
+    background-color: blue;
+    z-index: 1;
+    top: 20px;
+    left: -100px;
+    right: 10px;
+    bottom: 100px;
+}
+
+.main_img {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    display: block;
+    z-index: 10;
+    background-image: url(../img/hito.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
