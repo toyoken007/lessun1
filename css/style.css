@@ -323,6 +323,8 @@ h4 {
     left: -40px;
     display: block;
     transform: rotate(-45deg);
+    z-index: -9;
+    
 }
 
 .border>h4 {
@@ -366,7 +368,7 @@ h4 {
     left: -100px;
     right: 10px;
     bottom: 100px;
-    
+
 }
 
 .main_img {
