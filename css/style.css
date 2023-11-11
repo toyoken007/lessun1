@@ -395,7 +395,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     margin-left: 13%;
-    width: 100%;
+    width: 87%;
     height: 100%;
     font-size: 1em;
     z-index: 100;
@@ -420,7 +420,7 @@ h4 {
     font-weight: bold;
     padding: 25px 20px;
     border: 1px solid;
-    width: 35%;
+    width: 270px;
     position: relative;
     background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);    /* 背景色指定 */
 }
