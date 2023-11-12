@@ -362,6 +362,7 @@ h4 {
     margin-left: -80px;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .right_img::after {
@@ -386,6 +387,25 @@ h4 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: transform .6s ease;
+}
+
+.right_img:hover .main_img{
+    transform: scale(1.1);
+}
+
+.right_img:hover .link {
+    background: red;
+}
+
+.main_img::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3); /*半透明のフィルターをかける*/
 }
 
 .main_img_inner {
