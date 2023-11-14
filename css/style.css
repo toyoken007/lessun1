@@ -20,11 +20,11 @@ img {
     justify-content: space-between;
     padding: 40px;
     align-items: center;
-    color: #fbfbfb;
+    color: #ffffff;
     width: 100%;
     position: fixed;
     z-index: 999;
-    /* background-color: black; */
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -328,7 +328,7 @@ h4 {
     display: block;
     transform: rotate(-45deg);
     z-index: -9;
-    
+
 }
 
 .border>h4 {
@@ -390,13 +390,17 @@ h4 {
     transition: transform .6s ease;
 }
 
-.right_img:hover .main_img{
+.right_img:hover .main_img {
     transform: scale(1.1);
 }
 
-.right_img:hover .link {
-    background: red;
-}
+
+
+/* .right_img:hover .hover {
+    position: relative;
+    background: #fbfbfb;
+    z-index: 50;
+} */
 
 .main_img::after {
     content: "";
@@ -405,7 +409,8 @@ h4 {
     right: 0;
     bottom: 0;
     position: absolute;
-    background-color: rgba(0,0,0,0.3); /*半透明のフィルターをかける*/
+    background-color: rgba(0, 0, 0, 0.3);
+    /*半透明のフィルターをかける*/
 }
 
 .main_img_inner {
@@ -435,6 +440,7 @@ h4 {
 
 .main_img_inner .link {
     font-size: 1.5em;
+    z-index: 0;
     color: #fbfbfb;
     letter-spacing: 1;
     font-weight: bold;
@@ -442,7 +448,7 @@ h4 {
     border: 1px solid;
     width: 270px;
     position: relative;
-    background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);    /* 背景色指定 */
+    background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
 }
 
 .main_img_inner .link::after {
@@ -453,4 +459,32 @@ h4 {
     transform: translate(-50%, -50%);
     color: red;
     z-index: 10;
+}
+
+.right_img:hover .main_img_inner .link::after{
+    left: 85%;
+}
+
+.main_img_inner .link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: -1;
+}
+
+.right_img:hover .main_img_inner .link::before {
+    width: 100%;
+}
+
+.right_img:hover .main_img_inner .link {
+    transition: .5s;
+    color: black;
 }
