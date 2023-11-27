@@ -582,6 +582,7 @@ h4 {
     margin-top: 200px;
     font-size: 10px;
     text-align: center;
+    position: relative;
 }
 
 .join_us_wrap>p {
@@ -614,11 +615,22 @@ h4 {
     padding-top: 110px;
 }
 
+/* .join_link::after {
+    content: "";
+    background: url(../img/yuuhi.jpg);
+    position: absolute;
+    top: 275px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+} */
+
 .link_box {
     border: 1px solid;
     width: 38%;
     text-align: left;
     color: black;
+    background-color: white;
 }
 
 .link_box>p {
@@ -655,4 +667,39 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.join_img {
+    position: absolute;
+    top: 610px;
+    width: 100%;
+    z-index: -1;
+}
+
+.join_img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 625px;
+}
+
+.join_img::before {
+    content: "";
+    position: absolute;
+    background: url(../img/comment.png);
+    width: 62%;
+    height: 39%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
