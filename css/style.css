@@ -670,8 +670,10 @@ h4 {
 }
 
 .join_img {
-    position: absolute;
-    top: 610px;
+    /* position: absolute; */
+    /* top: 610px; */
+    position: relative;
+    margin-top: -70px;
     width: 100%;
     z-index: -1;
 }
@@ -692,14 +694,144 @@ h4 {
     content: "";
     position: absolute;
     background: url(../img/comment.png);
-    width: 62%;
-    height: 39%;
+    width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%);
     top: 60%;
     left: 50%;
     right: 50%;
     bottom: 0;
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* conatct */
+
+.contact_box {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    column-gap: 12%;
+}
+
+.contact_wrap {
+    line-height: 1.3;
+}
+
+.contact_wrap h3 {
+    font-size: 7em;
+}
+
+.contact_wrap span {
+    font-weight: normal;
+}
+
+.contact_wrap>p {
+    font-size: 1.8em;
+}
+
+.contact_link {
+    /* width: 504px;
+    height: 115px; */
+    /* padding: 35px 152px; */
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_link .contact_link_box {
+    color: white;
+    padding: 35px 152px;
+    font-size: 2em;
+    position: relative;
+}
+
+.contact_link .contact_link_box::after {
+    position: absolute;
+    content: "";
+    background: url(https://placehold.jp/20x20.png);
+    left: 130px;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* footer */
+
+footer {
+    padding: 70px 0;
+    color: #fbfbfb;
+    background: black;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+.gaiyou {
+    margin-left: 7%;
+}
+
+.gaiyou h4 {
+    font-size: 3em;
+}
+
+.gaiyou .name {
+    font-size: 1.3em;
+}
+
+.gaiyou .address {
+    font-size: 1.3em;
+}
+
+.footer_nav {
+    margin-right: 10%;
+    width: 451px;
+}
+
+.footer_nav ul {
+    display: flex;
+    font-size: 1.3em;
+    list-style: none;
+    column-gap: 10%;
+}
+
+.footer_nav ul a {
+    color: #fbfbfb;
+}
+
+.footer_nav .contact {
+    padding: 10px 47px;
+    background-color: #fbfbfb;
+    color: black;
+    position: relative;
+    background: url(https://placehold.jp/20x20.png);
+    background-repeat: no-repeat;
+}
+
+/* .footer_nav .contact::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://placehold.jp/20x20.png);
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.footer_nav small {
+    font-size: 1.2em;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    color: #494949;
+}
+
