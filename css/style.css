@@ -18,7 +18,7 @@ img {
 .headnav {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 10px 40px;
     align-items: center;
     color: #ffffff;
     width: 100%;
@@ -45,6 +45,17 @@ h1 {
     font-size: 12px;
 }
 
+.hum {
+    display: none;
+}
+@media screen and (max-width:900px) {
+    .hum {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+}
 .nav ul {
     display: flex;
     list-style: none;
@@ -807,13 +818,23 @@ footer {
 }
 
 .footer_nav .contact {
-    padding: 10px 47px;
+    padding: 10px 34px;
     background-color: #fbfbfb;
     color: black;
-    position: relative;
-    background: url(https://placehold.jp/20x20.png);
-    background-repeat: no-repeat;
+    display: flex;
 }
+
+.footer_nav .contact_img {
+    background: url(https://placehold.jp/20x20.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* .contact_img {
+    width: 20px;
+    height: 20px;
+} */
 
 /* .footer_nav .contact::before {
     position: absolute;
