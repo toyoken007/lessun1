@@ -937,7 +937,7 @@ footer {
     /* ハンバーガークリック後のスタイル */
 
     .nav.active {
-        transform: translateX(0);
+        /* transform: translateX(0); */
     }
 
     .openbtn.active span:nth-child(1) {
