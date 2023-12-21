@@ -15,7 +15,7 @@ img {
     vertical-align: bottom;
 }
 
-.headnav {
+.hamburger {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
@@ -305,7 +305,7 @@ h4 {
 
 .business_box {
     margin-top: 100px;
-    font-size: 10px;
+    font-size: 1vw;
 }
 
 .business_box h3 {
@@ -327,14 +327,15 @@ h4 {
 
 .left_box {
     width: 50%;
-    padding: 12vh 0 10vh 13vh;
+    padding: 10vh 0 10vh 13vh;
 }
 
 .border {
     border: 5px solid black;
-    padding: 70px;
+    padding: 50px;
     position: relative;
     z-index: 99;
+    font-size: 1vw;
 }
 
 .border::before {
@@ -346,8 +347,8 @@ h4 {
     position: absolute;
     width: 250px;
     height: 160px;
-    top: -20px;
-    left: -40px;
+    top: -50px;
+    left: -65px;
     display: block;
     transform: rotate(-45deg);
     z-index: -9;
@@ -355,7 +356,7 @@ h4 {
 }
 
 .border>h4 {
-    font-size: 4rem;
+    font-size: 3.5em;
     position: relative;
     line-height: 1.2;
     padding-top: 0.5em;
@@ -710,7 +711,7 @@ h4 {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 625px;
+    height: 100%;
 }
 
 .join_img::before {
@@ -737,7 +738,7 @@ h4 {
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    column-gap: 12%;
+    column-gap: 6%;
 }
 
 .contact_wrap {
@@ -760,21 +761,41 @@ h4 {
     /* width: 504px;
     height: 115px; */
     /* padding: 35px 152px; */
-    background: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* display: none; */
+}
+
+.contact_link>p {
+    display: none;
 }
 
 .contact_link .contact_link_box {
+    display: flex;
     color: white;
-    padding: 35px 152px;
-    font-size: 2em;
-    position: relative;
+    background: black;
+    padding: 35px 200px;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6%;
 }
 
-.contact_link .contact_link_box::after {
+.con_link_img {
+    display: block;
+    background: url(https://placehold.jp/20x20.png);
+    width: 20px;
+    height: 20px;
+}
+
+.contact_link .con_comment {
+    font-size: 1.2em;
+    width: 205px;
+}
+
+/* .contact_link .contact_link_box::after {
     position: absolute;
     content: "";
     background: url(https://placehold.jp/20x20.png);
@@ -784,7 +805,7 @@ h4 {
     top: 50%;
     bottom: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 /* footer */
 
@@ -870,8 +891,296 @@ footer {
 
 @media screen and (max-width:768px) {
 
+    /* ハンバーガー */
     .nav {
         display: none;
     }
 
+    .openbtn {
+        display: flex;
+        row-gap: 4px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        border: 0;
+        background-color: transparent;
+    }
+
+    .openbtn span {
+        display: inline-block;
+        transition: all .4s;
+        left: 14px;
+        height: 2px;
+        border-radius: 5px;
+        background-color: rgb(0 0 0);
+        width: 45%;
+    }
+
+
+    .openbtn span:nth-of-type(1) {
+        top: 13px;
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top: 19px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top: 25px;
+    }
+
+    /* ハンバーガークリック後のスタイル */
+
+    .nav.active {
+        transform: translateX(0);
+    }
+
+    .openbtn.active span:nth-child(1) {
+        margin-left: 10px;
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .openbtn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-child(3) {
+        margin-left: 10px;
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    /* ハンバーガークリック後のスタイル終わり */
+
+    .p_left p {
+        left: -120px;
+    }
+
+    .rinen_h4>p {
+        font-size: 2em;
+    }
+
+    .flex {
+        display: block;
+        width: 100%;
+    }
+
+    .left_box {
+        width: 85%;
+        margin-left: 3%;
+        padding: 0;
+    }
+
+    .border::before {
+        width: 155px;
+        left: 80%;
+        transform: rotate(-26deg);
+    }
+
+    .border {
+        padding: 25px 25px 40px;
+    }
+
+    .border>p {
+        font-size: 1.8em;
+    }
+
+    .border p br {
+        display: none;
+    }
+
+    .right_img {
+        margin: -30px 0 0;
+        width: 85%;
+        left: 12%;
+        height: 60vh;
+    }
+
+    .main_img {
+        height: 45vh;
+    }
+
+    .main_img_inner {
+        height: 45vh;
+        margin-left: 5%;
+    }
+
+    .main_img_inner>h2 {
+        font-size: 7em;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+    .main_img_inner .link {
+        font-size: 2em;
+        padding: 15px 20px;
+        width: 200px;
+    }
+
+    .main_img_inner>p {
+        padding-bottom: 20px;
+    }
+
+    .right_img::after {
+        display: none;
+    }
+
+    .link_box {
+        width: 45%;
+    }
+
+    .link_box>p {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .link_wrap {
+        display: block;
+        position: relative;
+        padding: 0;
+    }
+
+    .link_wrap::after {
+        right: 20px;
+        bottom: 0px;
+    }
+
+    .link_wrap .bosyuu {
+        font-size: 1.2em;
+        display: flex;
+        width: 60px;
+        height: 31px;
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link_wrap .comment {
+        font-size: 1.5em;
+        padding: 10px 0 20px 20px;
+    }
+
+    .join_us_wrap>p {
+        font-size: 2em;
+        color: #afafaf;
+    }
+
+    .join_us_wrap h3 {
+        font-size: 6.5em;
+        line-height: 1;
+    }
+
+    .join_us_wrap h4 {
+        display: none;
+    }
+
+    .join_us_wrap h5 {
+        font-size: 1.5em;
+        margin-top: 100px;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .join_img::before {
+        position: absolute;
+        width: 80%;
+        height: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .join_link {
+        padding-top: 50px;
+    }
+
+    .knowmore_box {
+        margin-top: 100px;
+    }
+
+    .contact_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .contact_wrap {
+        line-height: 1.3;
+        width: 100%;
+    }
+
+    .contact_wrap h3 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 2%;
+    }
+
+    .contact_link {
+        margin: 0 auto;
+        align-items: baseline;
+    }
+
+    .contact_link .contact_link_box {
+        padding: 4vh 30vw;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .con_link_img {
+        position: static;
+        content: "";
+        background: url(https://placehold.jp/20x20.png);
+        left: 130px;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        bottom: 50%;
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .contact_wrap>p {
+        display: none;
+    }
+
+    .contact_link>p {
+        display: block;
+        font-size: 1.5em;
+        margin-bottom: 2%;
+    }
+
+    footer {
+        flex-direction: column;
+        row-gap: 40px;
+        padding: 30px 0;
+    }
+
+    .gaiyou .name {
+        margin-bottom: 2%;
+    }
+
+    .footer_nav {
+        margin-left: 7%;
+    }
+
+    .footer_nav ul {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .footer_nav .contact {
+        width: 155px;
+        align-items: center;
+    }
+
+    .footer_nav small {
+        text-align: left;
+    }
 }

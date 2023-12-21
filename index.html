@@ -11,26 +11,28 @@
 </head>
 
 <body>
-	<header class="headnav">
-		<div class="logo">
-			<a href="">
-				<h1>LIBASE</h1><span class="logosuv">個人が輝ける世界を</span>
-			</a>
+	<header>
+		<div class="hamburger">
+			<div class="logo">
+				<a href="">
+					<h1>LIBASE</h1><span class="logosuv">個人が輝ける世界を</span>
+				</a>
+			</div>
+			<!-- <div class="hum">hambaga</div> -->
+			<nav class="nav" id="js_nav">
+				<ul id="bueger">
+					<li>ABOUT</li>
+					<li>BUSINESS</li>
+					<li>JOIN US</li>
+					<li class="navcon">CONTACT</li>
+				</ul>
+			</nav>
+			<button class="openbtn" id="js-hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</div>
-		<!-- <div class="hum">hambaga</div> -->
-		<nav class="nav" id="js_nav">
-			<ul id="bueger">
-				<li>ABOUT</li>
-				<li>BUSINESS</li>
-				<li>JOIN US</li>
-				<li class="navcon">CONTACT</li>
-			</ul>
-		</nav>
-		<button class="openbtn" id="js-hamburger">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
 	</header>
 	<!-- <figure>
 		<source></figure>
@@ -111,11 +113,7 @@
 							最適なデザイナーが<br>
 							見つかる
 						</h4>
-						<p>審査通過率5％を通過した<br>
-							トップデザイナーの中から<br>
-							さらに案件にあったデザイナーを<br>
-							ご提案させていただきます。
-						</p>
+						<p>審査通過率5％を通過した<br>トップデザイナーの中から<br>さらに案件にあったデザイナーを<br>ご提案させていただきます。</p>
 					</div>
 				</div>
 				<div class="right_img">
@@ -224,7 +222,8 @@
 				<p>事業・採用に関するご相談はご気軽にお問い合わせください。</p>
 			</div>
 			<div class="contact_link">
-				<a href="" class="contact_link_box">お問い合わせはこちら</a>
+				<p>事業・採用に関するご相談はご気軽にお問い合わせください。</p>
+				<a href="" class="contact_link_box"><span class="con_link_img"></span><p class="con_comment">お問い合わせはこちら</p></a>
 			</div>
 		</div>
 	</main>
@@ -249,6 +248,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="js/ham.js"></script>
 
 </body>
 
