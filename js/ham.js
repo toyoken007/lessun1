@@ -14,6 +14,7 @@ $(function () {
     ham.on('click', function () { //ハンバーガーメニューをクリックしたら
         ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
         nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外
+        $('body').toggleClass('scroll_non')
     })
 
     // $("#js-hamburger").on('click', function () { //ハンバーガーメニューをクリックしたら
