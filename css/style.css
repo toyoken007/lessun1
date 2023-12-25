@@ -892,9 +892,9 @@ footer {
 @media screen and (max-width:768px) {
 
     /* ハンバーガー */
-    .nav {
+    /* .nav {
         display: none;
-    }
+    } */
 
     .openbtn {
         display: flex;
