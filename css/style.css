@@ -602,6 +602,10 @@ h4 {
 
 /* joinus */
 
+.join_us_wrap_res {
+    display: none;
+}
+
 .join_us_box {
     margin-top: 200px;
     font-size: 10px;
@@ -1001,6 +1005,8 @@ footer {
 
     .nav ul {
         display: flex;
+        height: 100vh;
+        justify-content: center;
         list-style: none;
         row-gap: 25px;
         flex-direction: column;
@@ -1062,6 +1068,14 @@ footer {
 
     /* ハンバーガークリック後のスタイル終わり */
 
+    .hamburger {
+        width: 100vw;
+    }
+
+    .logosuv {
+        display: none;
+    }
+
     .navcon::before {
         display: none;
         /* content: "";
@@ -1100,6 +1114,10 @@ footer {
         left: -120px;
     }
 
+    .scroll_right {
+        display: none;
+    }
+
     .rinen_h4>p {
         font-size: 2em;
     }
@@ -1119,14 +1137,19 @@ footer {
         width: 155px;
         left: 80%;
         transform: rotate(-26deg);
+        display: none;
     }
 
     .border {
-        padding: 25px 25px 40px;
+        padding: 30px 15px;
+    }
+
+    .border>h4 {
+        font-size: 7.5em;
     }
 
     .border>p {
-        font-size: 1.8em;
+        font-size: 4.3em;
     }
 
     .border p br {
@@ -1140,6 +1163,26 @@ footer {
         height: 60vh;
     }
 
+    .rinen_h2>p {
+        font-size: 7.8em;
+    }
+
+    .rinen_h2>p br {
+        display: none;
+    }
+
+    .rinen_h3>p {
+        font-size: 4em;
+    }
+
+    .rinen_h4>p {
+        font-size: 3.2em;
+    }
+
+    .rinen_h4>p .rinen_h4_br {
+        display: none;
+    }
+
     .main_img {
         height: 45vh;
     }
@@ -1150,19 +1193,20 @@ footer {
     }
 
     .main_img_inner>h2 {
-        font-size: 7em;
+        font-size: 14em;
         line-height: 1.5;
         margin-bottom: 0;
     }
 
     .main_img_inner .link {
-        font-size: 2em;
+        font-size: 4em;
         padding: 15px 20px;
         width: 200px;
     }
 
     .main_img_inner>p {
         padding-bottom: 20px;
+        font-size: 4em;
     }
 
     .right_img::after {
@@ -1176,6 +1220,7 @@ footer {
     .link_box>p {
         font-size: 1.5em;
         padding: 20px;
+        line-height: 1.2;
     }
 
     .link_wrap {
@@ -1185,8 +1230,8 @@ footer {
     }
 
     .link_wrap::after {
-        right: 20px;
-        bottom: 0px;
+        right: 5px;
+        bottom: -10px;
     }
 
     .link_wrap .bosyuu {
@@ -1201,7 +1246,7 @@ footer {
     }
 
     .link_wrap .comment {
-        font-size: 1.5em;
+        font-size: 1.4em;
         padding: 10px 0 20px 20px;
     }
 
@@ -1216,14 +1261,48 @@ footer {
     }
 
     .join_us_wrap h4 {
+        /* font-size: 4em; */
         display: none;
     }
 
+    .join_us_wrap_res {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        margin-top: 35px;
+    }
+
+    .join_us_wrap_res .res_p1 {
+        font-size: 1.8em;
+        background-color: #1d1d1d;
+        color: #fbfbfb;
+        width: 170px;
+        padding: 5px 10px;
+    }
+
+    .join_us_wrap_res .res_p2 {
+        font-size: 1.8em;
+        background-color: #1d1d1d;
+        color: #fbfbfb;
+        width: 330px;
+        padding: 5px 10px;
+    }
+
+    /* .join_us_wrap .join_us_wrap_inner {
+        font-size: 3em;
+        display: block;
+    } */
+
     .join_us_wrap h5 {
         font-size: 1.5em;
-        margin-top: 100px;
+        margin-top: 30px;
         text-align: left;
         margin-left: 5%;
+    }
+
+    .join_img {
+        margin-top: -30px;
     }
 
     .join_img::before {
@@ -1267,7 +1346,9 @@ footer {
     }
 
     .contact_link .contact_link_box {
-        padding: 4vh 30vw;
+        padding: 25px;
+        margin: 0 auto;
+        width: 90%;
         font-size: 1.5em;
         display: flex;
         align-items: center;
@@ -1292,8 +1373,9 @@ footer {
 
     .contact_link>p {
         display: block;
-        font-size: 1.5em;
-        margin-bottom: 2%;
+        width: 90%;
+        font-size: 1.2em;
+        margin: 5px auto;
     }
 
     footer {
@@ -1308,11 +1390,13 @@ footer {
 
     .footer_nav {
         margin-left: 7%;
+        width: 300px;
     }
 
     .footer_nav ul {
         flex-direction: column;
         row-gap: 10px;
+        width: 300px;
     }
 
     .footer_nav .contact {
