@@ -17,6 +17,12 @@ $(function () {
         $('body').toggleClass('scroll_non')
     })
 
+    ham.on('click', function () { //ハンバーガーメニューをクリックしたら
+        $(".know_wrap").toggleClass('slider');
+    })
+
+
+
     // $("#js-hamburger").on('click', function () { //ハンバーガーメニューをクリックしたら
     //     $(".nav").fadeToggle(1000);
     // })
